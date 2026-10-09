@@ -1,0 +1,16 @@
+# Python has no real constants; ALL_CAPS is the convention
+
+MEOWS = 3
+
+for _ in range(MEOWS):
+    print("meow")
+
+class Cat:
+    MEOWS = 3
+
+    def meow(self):
+        for _ in range(Cat.MEOWS):
+            print("meow")
+
+cat = Cat()
+cat.meow()
